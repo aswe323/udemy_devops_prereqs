@@ -1,7 +1,8 @@
 #technically requires virtualbox
 apt update
-apt-get install openjdk-8-jdk maven curl software-properties-common -y
+add-apt-repository ppa:webupd8team/java
 apt-add-repository universe -y
+apt-get install openjdk-8-jdk maven curl software-properties-common -y
 apt update -y
 apt install maven -y
 #awscli doesn't exist in repo, we use snap insted
